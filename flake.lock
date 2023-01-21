@@ -1,0 +1,61 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1667395993,
+        "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "5aed5285a952e0b949eb3ba02c12fa4fcfef535f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1673796341,
+        "narHash": "sha256-1kZi9OkukpNmOaPY7S5/+SlCDOuYnP3HkXHvNDyLQcc=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "6dccdc458512abce8d19f74195bb20fdb067df50",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nut-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1672506246,
+        "narHash": "sha256-imO++i4bfxQnMNh+BOZRYvJAzqgehFIElpQX3NyQF+8=",
+        "owner": "DRuggeri",
+        "repo": "nut_exporter",
+        "rev": "1625e235d0250897ea61c960e466a89c346e4575",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DRuggeri",
+        "ref": "v2.5.2",
+        "repo": "nut_exporter",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "nut-src": "nut-src"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
