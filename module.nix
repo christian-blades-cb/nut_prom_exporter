@@ -41,15 +41,15 @@ in
 
     extraEnvs = mkOption rec {
       type = types.attrsOf types.str;
-      default = { NUT_EXPORTER_METRICS_NAMESPACE = "network_ups"; };
-      example = default;
+      default = {};
+      example = { NUT_EXPORTER_METRICS_NAMESPACE = "network_ups_tools"; };
       description = "Extra env vars to configure various options on the exporter";
     };
     
   };
 
   config = mkIf cfg.enable {
-    systemd.services."nut-mastodon-exporter" = {
+    systemd.services."prometheus-nut-exporter" = {
       wantedBy = [ "multi-user.target" ];
       after = [ "network.target" ];
       environment = { NUT_EXPORTER_PASSWORD=cfg.pass; } // cfg.extraEnvs;
